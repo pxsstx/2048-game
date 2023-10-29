@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+i.fa-trophy{
+    color: gold;;
+}
+
+.game-container{
+    width: 320px;
+    height: 320px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.cell{
+    width: 77px;
+    height: 77px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #000;
+    border-radius: 10%;
+}
+
+.score-container{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.control{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.howtoplay{
+    text-align: center;
+}
+
+.control-btn{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.control-btn button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f6e7cc;
+    cursor: pointer;
+}
+
+.control-btn button:hover {
+    background-color: #FF5733; /* Change this to your desired color */
+    color: white;
+}
+
+.cell[data-value="2"]{
+    background-color: #9b8bf4;
+}
+.cell[data-value="4"]{
+    background-color: #8dd2dd;
+}
+.cell[data-value="8"]{
+    background-color: #ff8848;
+}
+.cell[data-value="16"]{
+    background-color: #F9FFA4;
+}
+.cell[data-value="32"]{
+    background-color: #ff8787;
+}
+.cell[data-value="64"]{
+    background-color: #B3E283;
+}
+.cell[data-value="128"]{
+    background-color: #d194c4;
+}
+.cell[data-value="256"]{
+    background-color: #f8b8d0;
+}
+.cell[data-value="512"]{
+    background-color: #009eb0;
+}
+.cell[data-value="1024"]{
+    background-color: #d97945;
+}
+.cell[data-value="2048"]{
+    background-color: #606ff3;
+}
+.cell[data-value="4096"]{
+    background-color: #85e2b5;
+}
+
+
+
+#restart-btn{
+    margin-top: 15px;
+    padding: 10px 15px ;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+#game-over{
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50% );
+    background-color: rgba( 0,0,0,0.8);
+    border-radius: 10px;
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

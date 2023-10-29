@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>2048-Game</title>
+  </head>
+  <body>
+    <div class="score-container">
+      <div>Score : <span id="current-score"></span></div>
+      <div>
+        <i class="fa fa-trophy"></i> High Score : <span id="high-score"></span>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="grid">
+        <div class="cell" data-row="0" data-col="0"></div>
+        <div class="cell" data-row="0" data-col="1"></div>
+        <div class="cell" data-row="0" data-col="2"></div>
+        <div class="cell" data-row="0" data-col="3"></div>
+        <div class="cell" data-row="1" data-col="0"></div>
+        <div class="cell" data-row="1" data-col="1"></div>
+        <div class="cell" data-row="1" data-col="2"></div>
+        <div class="cell" data-row="1" data-col="3"></div>
+        <div class="cell" data-row="2" data-col="0"></div>
+        <div class="cell" data-row="2" data-col="1"></div>
+        <div class="cell" data-row="2" data-col="2"></div>
+        <div class="cell" data-row="2" data-col="3"></div>
+        <div class="cell" data-row="3" data-col="0"></div>
+        <div class="cell" data-row="3" data-col="1"></div>
+        <div class="cell" data-row="3" data-col="2"></div>
+        <div class="cell" data-row="3" data-col="3"></div>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="howtoplay">Press arrow button on keyborad or Down button to play.</div>
+      <div class="control-btn">
+        <div></div>
+        <button class="arrowUp" id="up-button"><i class="fa fa-arrow-up"></i></button>
+        <div></div>
+        <button class="arrowLeft" id="left-button"><i class="fa fa-arrow-left"></i></button>
+        <button class="arrowDown" id="down-button"><i class="fa fa-arrow-down"></i></button>
+        <button class="arrowRight" id="right-button"><i class="fa fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div id="game-over">
+      Game Over!
+      <button id="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
