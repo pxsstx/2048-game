@@ -10,6 +10,11 @@ body{
     background-color: #fafafa;
 }
 
+.tilte-game{
+    font-size: 35px;
+    margin-bottom:10px ;
+}
+
 i.fa-trophy{
     color: gold;;
 }
